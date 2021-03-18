@@ -4,6 +4,9 @@
   "useWorkspaces": true,
   "version": "independent",
   "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org"
+    },
     "version": {
       "allowBranch": "main",
       "ignoreChanges": ["**/*.md"]
