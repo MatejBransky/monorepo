@@ -11,14 +11,14 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "check-format": "lerna run check-format",
-    "lint": "lerna run lint",
-    "types": "lerna run types",
-    "test": "lerna run test",
-    "format": "lerna run format",
+    "check-format": "lerna run check-format --parallel",
+    "lint": "lerna run lint --parallel",
+    "types": "lerna run types --parallel",
+    "test": "lerna run test --parallel",
+    "format": "lerna run format --parallel",
     "commit": "git-cz",
     "bootstrap": "npx lerna bootstrap",
-    "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
+    "version:ci": "lerna version --yes --exact --conventional-commits --create-release github --message 'chore(release): publish'",
     "publish:ci": "lerna publish from-package --yes"
   },
   "devDependencies": {
